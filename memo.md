@@ -5,15 +5,15 @@
 |M0|RV32C|保存責任|使い方|
 |---|---|---|---|
 |R0～R3|R10～R13|caller-save|引数と戻り値|
-|R4、R5|R8、R9|callee-save|汎用 (RV32Cの演算命令で使いやすい)|
-|R6～R11|R18～R23|callee-save|汎用|
+|R4、R5|R8、R9|**callee-save**|汎用 (RV32Cの演算命令で使いやすい)|
+|R6～R11|R18～R23|**callee-save**|汎用|
 |R12|R14|caller-save|汎用|
-|R13|R2|callee-save|スタックポインタ|
+|R13|R2|**callee-save**|スタックポインタ|
 |R14|R1|caller-save|リンクレジスタ|
 |R15|R15|caller-save (RV32C)|プログラムカウンタ / RV32Cではアドレス作業用|
 |-|R28～R31|caller-save|分岐(フラグ)作業用|
 |-|R5～R7、R16、R17|caller-save|未割り当て|
-|-|R24～R27|callee-save|未割り当て|
+|-|R24～R27|**callee-save**|未割り当て|
 |-|R0|-|ゼロ固定|
 |-|R3|-|グローバルポインタ (？)|
 |-|R4|-|スレッドポインタ (？)|
