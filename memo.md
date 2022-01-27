@@ -10,9 +10,8 @@
 |R12|R14|caller-save|汎用|
 |R13|R2|callee-save|スタックポインタ|
 |R14|R1|caller-save|リンクレジスタ|
-|R15|R15|caller-save (RV32C)|プログラムカウンタ / RV32Cでは作業用|
-|-|R28|caller-save|メモリアクセス作業用|
-|-|R29～R31|caller-save|分岐作業用(仮)|
+|R15|R15|caller-save (RV32C)|プログラムカウンタ / RV32Cではアドレス作業用|
+|-|R28～R31|caller-save|分岐(フラグ)作業用|
 |-|R5～R7、R16、R17|caller-save|未割り当て|
 |-|R24～R27|callee-save|未割り当て|
 
